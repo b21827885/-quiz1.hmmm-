@@ -1,0 +1,13 @@
+0 setn r1 -10 #g
+1 setn r2 2 #constant in formula
+2 read r3 #t
+3 read r4 #x
+4 read r5 #v
+5 div r6 r1 r2 #g/2
+6 mul r7 r3 r3 #t^2
+7 mul r8 r7 r6 #(g/2)*(t^2)
+8 mul r9 r5 r3 #v*t
+9 add r10 r8 r9 #(t^2)(g/2)+(v*t)
+10 add r11 r10 r4 #(t^2)(g/2)+(v*t)+x
+11 write r11
+12 halt
